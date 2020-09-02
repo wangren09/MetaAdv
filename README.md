@@ -15,6 +15,6 @@ Run trainfgsmrs.ipynb, associate files include metafgsm.py, attack.py, learner.p
 ## MAML + TRADES-RS
 Run
 ## Visualization
-Run robust_vis_neuron.ipynb, associate files include Visualization.py, vis_tool.py.
+Run robust_vis_neuron.ipynb, associate files include Visualization.py, vis_tool.py, MODELMETA.py.
 * By maximizing the output of a nueron with a perturbation in th input, the feature is shown in the input under a robust model, while "random noise" is shown in the input under a standard MAML model.
 * The fine-tuned model has the similar feature to the original model in the same neuron. This suggests that the robustness is kept in the fine-tuned model even without adding the adversarial training in the fine-tuning.
