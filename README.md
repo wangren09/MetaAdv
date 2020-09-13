@@ -14,6 +14,8 @@ Run MAML_TrainStd.ipynb, associate files include MAMLMeta.py, attack.py, learner
 Run trainfgsmrs.ipynb, associate files include metafgsm.py, attack.py, learner.py. To incorporate adversarial training in the inner-loop, please replace metafgsm.py with metafgsminout.py
 ## MAML + TRADES-RS
 Run train_trade.ipynb, associate files include MetaFT.py.
+## Standard training (Meta-training) + few-short fine-tuning (Meta-tesing)
+Run StandardTransNew.ipynb, associate files include LoadDataST.py, StandardTrans.py.
 ## Visualization
 Run robust_vis_neuron.ipynb, associate files include Visualization.py, vis_tool.py, MODELMETA.py.
 * By maximizing the output of a nueron with a perturbation in th input, the feature is shown in the input under a robust model, while "random noise" is shown in the input under a standard MAML model.
