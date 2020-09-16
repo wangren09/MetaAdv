@@ -16,6 +16,9 @@ Run trainfgsmrs.ipynb, associate files include metafgsm.py, attack.py, learner.p
 Run train_trade.ipynb, associate files include MetaFT.py.
 ## Standard training + few-short fine-tuning (Meta-tesing)
 Run StandardTransNew.ipynb, associate files include LoadDataST.py, StandardTrans.py. StandardTransAdv.ipynb contains adversarial training in the model training process.
+## Unlabeled data selection
+Run figureselection.ipynb, associate files include 
+
 ## Visualization
 Run robust_vis_neuron.ipynb, associate files include Visualization.py, vis_tool.py, MODELMETA.py.
 * By maximizing the output of a nueron with a perturbation in th input, the feature is shown in the input under a robust model, while "random noise" is shown in the input under a standard MAML model.
