@@ -96,13 +96,16 @@ class Meta(nn.Module):
         losses_q_adv = [0 for _ in range(self.update_step + 1)]
         corrects_adv = [0 for _ in range(self.update_step + 1)]
         
-        x_q = x_qry.view(-1, 3, 84, 84)
-        x_s = x_spt.view(-1, 3, 84, 84)
+
         
         
 
 
         for i in range(task_num):
+            x_q = x_qry[i].view(-1, 3, 84, 84)
+            x_s = x_spt[i].view(-1, 3, 84, 84)
+            if x_nat != None:
+                x_unlab = x_nat[i].view(-1, 3, 84, 84)
 
             # 1. run the i-th task and compute loss for k=0
             logits = self.net(x_spt[i], vars=None, bn_training=True)
@@ -202,7 +205,7 @@ class Meta(nn.Module):
                     if x_nat == None:
                         x_natt = x_q
                     else:
-                        x_natt = torch.cat((x_q, x_nat), 0)
+                        x_natt = torch.cat((x_q, x_unlab), 0)
                     x_natt = torch.cat((x_s, x_natt), 0)
                     criterion_kl = nn.KLDivLoss(size_average=False)
                     self.net.eval()
