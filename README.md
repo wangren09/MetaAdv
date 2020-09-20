@@ -13,7 +13,7 @@ Run MAML_TrainStd.ipynb, associate files include MAMLMeta.py, attack.py, learner
 ## MAML + FGSM-RS (random start)
 Run trainfgsmrs.ipynb, associate files include metafgsm.py, attack.py, learner.py. To incorporate adversarial training in the inner-loop, please replace metafgsm.py with metafgsminout.py
 ## MAML + TRADES-RS
-Run train_trade.ipynb, associate files include MetaFT.py.
+Run train_trade.ipynb, associate files include MetaFT.py, LoadUnlableData.py.
 ## Standard training + few-short fine-tuning (Meta-tesing)
 Run StandardTransNew.ipynb, associate files include LoadDataST.py, StandardTrans.py. StandardTransAdv.ipynb contains adversarial training in the model training process.
 ## Unlabeled data selection
