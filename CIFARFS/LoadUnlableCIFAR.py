@@ -10,8 +10,6 @@ import torch
 # from torchvision.transforms import transforms
 import numpy as np
 import collections
-# from PIL import Image
-# import csv
 import random
 
 
@@ -75,28 +73,3 @@ if __name__ == '__main__':
     from tensorboardX import SummaryWriter
     import time
 
-#     plt.ion()
-
-#     tb = SummaryWriter('runs', 'mini-imagenet')
-#     mini = MiniImagenet('../../../dataset/', mode='train', batchsz=1000, resize=168)
-
-#     for i, set_ in enumerate(mini):
-#         # support_x: [k_shot*n_way, 3, 84, 84]
-#         support_x, support_y, query_x, query_y = set_
-
-#         support_x = make_grid(support_x, nrow=2)
-#         query_x = make_grid(query_x, nrow=2)
-
-#         plt.figure(1)
-#         plt.imshow(support_x.transpose(2, 0).numpy())
-#         plt.pause(0.5)
-#         plt.figure(2)
-#         plt.imshow(query_x.transpose(2, 0).numpy())
-#         plt.pause(0.5)
-
-#         tb.add_image('support_x', support_x)
-#         tb.add_image('query_x', query_x)
-
-#         time.sleep(5)
-
-#     tb.close()
