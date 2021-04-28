@@ -3,7 +3,7 @@
 * Python: 3.7
 * PyTorch: 1.5.0
 ### Dataset
-We use the benchmark dataset MiniImageNet, which can be download [here](https://drive.google.com/file/d/1HkgrkAwukzEZA0TpO7010PkAOREb2Nuk/view). CIFARFS and Omniglot can be found in the package torchmeta [here](https://github.com/tristandeleu/pytorch-meta)
+We use the benchmark dataset MiniImageNet, which can be download [here](https://drive.google.com/file/d/1HkgrkAwukzEZA0TpO7010PkAOREb2Nuk/view) and [here](https://github.com/twitter/meta-learning-lstm/tree/master/data/miniImagenet). CIFARFS and Omniglot can be found in the package torchmeta [here](https://github.com/tristandeleu/pytorch-meta)
 ### Model
 We use a four-layer-conv NN model
 ## Standard MAML training
